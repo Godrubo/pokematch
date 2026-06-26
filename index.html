@@ -40,6 +40,7 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   button { touch-action: manipulation; }
+  
   body {
     font-family: 'Outfit', sans-serif;
     background: radial-gradient(circle at 20% 8%, #E85A52 0%, transparent 45%),
@@ -159,6 +160,17 @@
   }
 
   @media (max-width:380px){ .key{ height:36px; font-size:18px; } .lang{ font-size:11px; } }
+  .disclaimer {
+    max-width: 1040px;
+    margin: 14px auto 0;
+    padding: 0 8px;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.55);
+  }
+  .disclaimer a { color: rgba(255,255,255,0.75); }
 </style>
 </head>
 <body>
@@ -177,7 +189,7 @@
       <div class="screen" id="screen"></div>
     </div>
 
-    <div class="controls">
+ <div class="controls">
       <div class="inputbox" id="inputbox"></div>
       <div class="tabs">
         <button class="tab active" data-mode="kata">カナ Katakana</button>
@@ -193,6 +205,12 @@
     </div>
     </div>
   </div>
+
+  <footer class="disclaimer">
+    Unofficial fan project · Not affiliated with, endorsed or sponsored by Nintendo,
+    Game Freak or The Pokémon Company. Pokémon and all related names are trademarks of their respective owners.
+    Data &amp; sprites from <a href="https://pokeapi.co" target="_blank" rel="noopener">PokéAPI</a>.
+  </footer>
 
 <script>
 /* ---------- translations ---------- */
